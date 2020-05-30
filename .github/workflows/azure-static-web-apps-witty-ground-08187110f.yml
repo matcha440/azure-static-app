@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         submodules: true
     
@@ -24,7 +24,6 @@ jobs:
       with:
         hugo-version: "latest"
         # extended: true
-    
     - name: Build
       run: hugo
     - name: Build And Deploy
